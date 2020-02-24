@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/welcomescreenbg"
+        app:srcCompat="@drawable/welcome_screenbg"
         android:contentDescription="@string/background" />
 
     <ImageView
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/swooshlogo"
+        app:srcCompat="@drawable/swoosh_logo"
         android:contentDescription="@string/logo" />
 
     <TextView
