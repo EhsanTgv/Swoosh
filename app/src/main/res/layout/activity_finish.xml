@@ -25,10 +25,10 @@
         android:id="@+id/searchLeaguesText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="24sp"
@@ -36,8 +36,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45999998"
-        tools:text="@string/search_league" />
+        app:layout_constraintVertical_bias="0.4"
+        android:text="@string/search_league" />
 
     <ProgressBar
         android:id="@+id/progressBar"
