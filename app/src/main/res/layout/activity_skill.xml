@@ -64,11 +64,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/beginnerSkillButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_weight="1"
+            android:onClick="onBeginnerClick"
             android:background="@drawable/swoosh_toggle"
             android:text="@string/beginner"
             android:textColor="@android:color/white"
@@ -76,10 +77,12 @@
             android:textOn="@string/beginner" />
 
         <ToggleButton
+            android:id="@+id/ballerSkillButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
+            android:onClick="onBallerClick"
             android:background="@drawable/swoosh_toggle"
             android:text="@string/baller"
             android:textColor="@android:color/white"
