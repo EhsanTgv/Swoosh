@@ -1,9 +1,12 @@
-package com.taghavi.swoosh
+package com.taghavi.swoosh.controller
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
+import com.taghavi.swoosh.R
+import com.taghavi.swoosh.utilities.EXTRA_LEAGUE
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : AppCompatActivity() {
@@ -14,28 +17,28 @@ class LeagueActivity : AppCompatActivity() {
         setContentView(R.layout.activity_league)
     }
 
-    fun onMensClicked() {
+    fun onMensClicked(view:View) {
         womensLeagueButton.isChecked = false
         coedLeagueButton.isChecked = false
 
         selectedLeague = "mens"
     }
 
-    fun onWomensClicked() {
+    fun onWomensClicked(view:View) {
         mensLeagueButton.isChecked = false
         coedLeagueButton.isChecked = false
 
         selectedLeague = "womens"
     }
 
-    fun onCoedClicked() {
+    fun onCoedClicked(view:View) {
         mensLeagueButton.isChecked = false
         womensLeagueButton.isChecked = false
 
         selectedLeague = "co-ed"
     }
 
-    fun leagueNextClicked() {
+    fun leagueNextClicked(view:View) {
         if (selectedLeague != "") {
             val skillActivity = Intent(this, SkillActivity::class.java)
             skillActivity.putExtra(EXTRA_LEAGUE, selectedLeague)

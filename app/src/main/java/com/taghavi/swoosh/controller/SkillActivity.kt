@@ -1,7 +1,9 @@
-package com.taghavi.swoosh
+package com.taghavi.swoosh.controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.taghavi.swoosh.R
+import com.taghavi.swoosh.utilities.EXTRA_LEAGUE
 
 class SkillActivity : AppCompatActivity() {
    private var league = ""

@@ -12,9 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SkillActivity" />
-        <activity android:name=".LeagueActivity" />
-        <activity android:name=".WelcomeActivity">
+        <activity android:name=".controller.SkillActivity" />
+        <activity android:name=".controller.LeagueActivity" />
+        <activity android:name=".controller.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
