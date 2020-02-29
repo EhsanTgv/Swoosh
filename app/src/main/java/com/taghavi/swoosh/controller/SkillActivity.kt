@@ -13,10 +13,24 @@ import kotlinx.android.synthetic.main.activity_skill.*
 class SkillActivity : AppCompatActivity() {
     private lateinit var player: PlayerModel
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable(EXTRA_PLAYER, player)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill)
         player = intent.getParcelableExtra(EXTRA_PLAYER)!!
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        try {
+            super.onRestoreInstanceState(savedInstanceState)
+            player = savedInstanceState.getParcelable(EXTRA_PLAYER)!!
+        } catch (e: Exception) {
+
+        }
     }
 
     fun onBallerClick(view: View) {
